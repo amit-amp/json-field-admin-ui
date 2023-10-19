@@ -9,11 +9,12 @@ https://docs.amplication.com/how-to/custom-code
 
 ------------------------------------------------------------------------------
   */
-import { ArgsType, Field } from "@nestjs/graphql";
+import { ArgsType } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
 import { CustomerCreateInput } from "./CustomerCreateInput";
 import { ValidateNested } from "class-validator";
 import { Type } from "class-transformer";
+import { Field } from "../../field/base/Field";
 
 @ArgsType()
 class CreateCustomerArgs {

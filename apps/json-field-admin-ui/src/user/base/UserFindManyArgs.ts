@@ -9,10 +9,11 @@ https://docs.amplication.com/how-to/custom-code
 
 ------------------------------------------------------------------------------
   */
-import { ArgsType, Field } from "@nestjs/graphql";
+import { ArgsType } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
 import { UserWhereInput } from "./UserWhereInput";
 import { IsOptional, ValidateNested, IsInt } from "class-validator";
+import { Field } from "../../field/base/Field";
 import { Type } from "class-transformer";
 import { UserOrderByInput } from "./UserOrderByInput";
 
