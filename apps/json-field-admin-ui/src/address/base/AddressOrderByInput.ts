@@ -9,10 +9,11 @@ https://docs.amplication.com/how-to/custom-code
 
 ------------------------------------------------------------------------------
   */
-import { InputType, Field } from "@nestjs/graphql";
+import { InputType } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
 import { IsOptional, IsEnum } from "class-validator";
 import { SortOrder } from "../../util/SortOrder";
+import { Field } from "../../field/base/Field";
 
 @InputType({
   isAbstract: true,
